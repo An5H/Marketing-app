@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Marketing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./market.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./market.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target="navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <div class = "col-md-4">
+      	<a class="navbar-brand" href="#myPage"><i class="fab fa-slack"></i></a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#custom">CUSTOM</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>MarketingXP<sup><i class="far fa-registered" style="width: 25px; height: 20px"></i></sup></h1><br> 
+  <p>Accelerate your business growth with marketingxp's integrated website plus digital marketing solution.<br>Subscribe to our weekly news
+    to start your own journey to success.
+    <form>
+    <div class="input-group">
+      <input style = " width: 40%" type="email" class="form-control" size="50" id = "email" placeholder="Email Address" required>
+     </div> 
+     </form>
+     <div class="col-md-12">
+     	<br><button id="button" type="button" onclick="Alert()">Subscribe</button>
+     </div>
+     <br>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company </h2><br>
+      <h4>We believe in empowering our customer because good marketing makes the company looks smart and great marketing makes the customer look smart.</h4><br>
+      <p>Marketingxp started out it's journey as a market consultant, but soon evolved into the marketing behemoth it is today.<br>It was not
+      	always like this for marketingxp.The road has been bumpy, we had our ups and downs<br> but we have always strived for success and will continue achieving the success and even better results for our clients.<br>As marketers, our mantra has changed from always be closing to always be helping.</p>
+      <br><button id="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Get in Touch</button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog .modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalCenterTitle">Getting in touch</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" id="email2">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" id="password">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary" onclick="Submit()">Submit</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="./apache-logo.png"/>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src = "./globe_PNG53.png" height="400px" width="400px" />
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is to diminish the gap between the product makers and the customers.</h4><br>
+      <p><strong>VISION:</strong> We believe that we are on face of earth to empower our customers to reach their unprecedented level
+      and<br> thats not changing. We are consistently focusing on innovating and bring out the best of everything.
+      We believe in<br>deep collaboration and cross-pollination of our groups,which allow us to innovate in a way others cannot.</p>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h3>What we offer</h3>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>We make use of latest technologies. And all our tools<br> work on the app engine co-developed by top developers<br> from Apple, IBM and MarketingXP.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>CLIENTS</h4>
+      <p>So many satisfied clients from all over the world. MarketingXP has<br> served all types of clients ranging from local producers to international companies. And many more in counting.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOBS</h4>
+      <p>Submit the resume here. And get a hand on experience <br> with the proffesionals and work in a friendly enviorment.<br>MarketingXP boasts about 5k proffesionals working internationally.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>We are commited to green revolution in the world.<br>We don't make use of anything that is not eco-friendly.<br>MarketingXP's HQ is powered wholly by solar energy.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFICATION</h4>
+      <p>Want to get trained by the proffesionals having years of experience ?<br>
+      Join now and get a certificate on completion of the course.<br>The only course of marketing you will ever need.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">TOOLS</h4>
+      <p>We specialize in digital marketing, using AI and machine learning<br>
+      to keep track of latest trends in the consumer market. We use<br>deep learning to understand complex human response to products.</p>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Achievements</h2>
+  <h3>What we have achieved</h3><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Famous for its Effiel Tower.<br>We have almost 6500 satisfied customers from Paris.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="new_york_1.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>New York's busy city has almost<br> 7100 satisfied customers whom we have served.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="San_Francisco_780x520px.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>San francisco, main hub of start-ups in silicon valley<br>.We boast a great variety of customers from here.</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, accenture.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot.</span></h4>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>30</strong> TV Ads</p>
+          <p><strong>15</strong> Banners</p>
+          <p><strong>5</strong> Social media ads</p>
+          <p><strong>2</strong> Newspaper ads</p>
+          <p><strong>Discount</strong> 11%</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$990</h3>
+          <h4>per month</h4>
+          <button id ="button" data-toggle="modal" data-target="#exampleModal3">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> TV Ads</p>
+          <p><strong>25</strong> Banners</p>
+          <p><strong>10</strong> Social media ads</p>
+          <p><strong>5</strong> Newspaper ads</p>
+          <p><strong>Discount</strong> 15%</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$1890</h3>
+          <h4>per month</h4>
+          <button id ="button" data-toggle="modal" data-target="#exampleModal3">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> TV Ads</p>
+          <p><strong>50</strong> Banners</p>
+          <p><strong>25</strong> Social media ads</p>
+          <p><strong>10</strong> Newspaper ads</p>
+          <p><strong>Discount</strong> 19%</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$2490</h3>
+          <h4>per month</h4>
+          <button id = "button" data-toggle="modal" data-target="#exampleModal3">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog .modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalCenterTitle">Signing up.</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                  	<div class="form-group">
+                        <label for="exampleInputname" id="nameista">Name</label>
+                        <input type="text" class="form-control" id="exampleInputname" placeholder="Enter name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" id="email2">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" id="password">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputnumber" id="number">Number</label>
+                        <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Phone Number">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary" onclick="Submit()">Submit</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div id="custom" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-8">
+        <h2>Customize your compaign</h2><br>
+        <h4>Lead your digital compaign on your own terms. Create your custom Ads and we will help you<br>find the best tools according to your budget.</h4><br>
+        <p>Marketingxp understands the user's needs to go in accordance with one's own budget.<br>
+        If you are unsure about your expenditure and want to get on with some proffesionals,<br>
+        who can guide you along your journey to success, than look no further.<br>
+        Just click on the customize button and get started with planing your compaign.</p>
+        <br><button id="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Customize</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Customize acc. to your budget</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="budget">Name</label>
+                          <input type="text" class="form-control" name="nameinform" placeholder="Enter name">
+                      </div>
+                      <div class="form-group">
+                        <label for="budget" id="budget">Budget</label>
+                        <input type="text" class="form-control" name="budgetlower" placeholder="Lower limit(in $)">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="budgetupper" placeholder="Upper limit(in $)">
+                      </div>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" onclick="setCustomerBudget(this.form)">Calculate</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+      <img src="./graph.png"/>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel1" style="float: left">The results according to your desired budget.</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label for="budget" id="budget" style="float: left">Budget</label>
+                  <input type="text" class="form-control" id="money" placeholder="money you want to spend ($)." style="float: left"><br>
+              </div>
+            <div class="form-group">
+                <label for="budget" id="budget" style="float: left">TV Ads</label>
+                <input type="text" class="form-control" id="tvads" placeholder="number of tv ads." style="float: left"><br>
+            </div>
+            <div class="form-body">
+                <label for="budget" id="budget1" style="float: left">Banners</label>
+                <input type="text" class="form-control" id="bannerads" placeholder="number of banners." style="float: left"><br>
+        </div>
+        <div class="form-body">
+                <label for="budget" id="budget2" style="float: left">Social Media Ads</label>
+                <input type="text" class="form-control" id="socialmediaads" placeholder="number of social media ads." style="float: left"><br>
+        </div>
+        <div class="form-body">
+                <label for="budget" id="budget3" style="float: left">Newspaper Ads</label>
+                <input type="text" class="form-control" id="newspaperads" placeholder="number of newspaper ads." style="float: left"><br><br><br><br><br><br><br><br>
+            </div>
+            <p id = "displayuser"></p>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="contact" class="container-fluid bg-white">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p> Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>  Jalandhar, Punjab.</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  +91 8847515213</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>  dhimanansh7@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email3" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button style = "float: right;" id ="button" onclick = "onSubmit()" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p><i class="far fa-copyright"></i>All Copyrights Reserved.2019</p>
+</footer>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
